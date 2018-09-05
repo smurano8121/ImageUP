@@ -1,0 +1,74 @@
+/* ヘッダーの固定 */
+header
+{
+  height: 200px; /* 高さ */
+  width: 100%; /* 長さ */
+  background-color: #000022;
+  position: fixed; z-index: 2; /* ヘッダーを固定(これが重要) */
+  top: 0; /* 固定する位置 */
+  left: 0; /* 固定する位置 */
+  right: 0;  /* 固定する位置 */
+  font-size: 22px;
+  font-weight: bolder;
+}
+title{
+  border: none;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+body
+{
+  padding-top: 150px;
+}
+/* .file input{
+  display:none;
+}
+.file img{
+  cursor:pointer;
+} */
+.file-label
+{
+  height: 120px; /* 高さ */
+  width: 100%; /* 長さ */
+  background-color: #000080;
+  position: absolute; z-index: 1;
+  top: 650; /* 固定する位置 */
+  left: 0; /* 固定する位置 */
+  right: 0;  /* 固定する位置 */
+  color: white;
+  font-size: 40px;
+  text-align:center;
+  font-weight: bolder;
+}
+
+button{
+  height: 65px;
+  width: 100%; /* 長さ */
+  position: absolute; z-index: 2;
+  top: 770px;
+  left: 0;
+  right: 0;
+  font-size: 40px;
+  background-color: #333333;
+  color: white;
+  font-weight: bolder;
+  border-style: none;
+}
+
+.album {
+  position: absolute; z-index: 1;
+  top: 220px;
+  left: 70px;
+  width: 96px;
+  height: 65px;
+}
+.takephoto {
+  position: absolute; z-index: 1;
+  top: 235px;
+  right: 280px;
+  width: 96px;
+  height: 65px;
+}

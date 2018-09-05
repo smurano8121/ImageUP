@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" >
+  <title>File Uploading Test</title>
+</head>
+<body>
+  <header>
+    <h1><div align="center"><font color="#ffffff">擬似窓画像投稿アプリケーション同志社大学
+      <img src="./material/doshisha.png" height="50px" align="top" id="file" />知的システムデザイン研究室</font></div></h1>
+  </header>
+  <!-- <p><select a file a upload:</p> -->
+  <form action="http://127.0.0.1:3000/file_upload" method="POST" enctype="multipart/form-data">
+
+    <img src="./material/album.png" height="400" id="file" />
+    <img src="./material/takephoto.jpg" height="400" id="file" />
+    <label for="file_photo">
+      +アルバムから写真を選択
+	     <input type="file" id="file_photo" style="display:none;">
+    </label>
+    <label for="realtime_photo">
+      +写真を撮影して投稿
+	     <input type="file" id="realtime_photo" style="display:none;">
+    </label>
+    <!-- <label for="file" class="file">
+	     <img src="./material/takephoto.jpg" height="400" id="file" />
+	     <input type="file"/>
+    </label>
+    <input type="submit" value="Upload File"> -->
+  </form>
+</body>
+</html>
