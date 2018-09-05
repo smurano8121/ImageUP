@@ -38,5 +38,9 @@ app.post('/photo', upload.fields([ {name: 'base_img', maxCount: 1} ]), function(
   // POSTされた画像の情報をJSONで取得
   const req_file_json = JSON.stringify(req.files);
   console.log(req.files); //
-  res.json({'result': 'success!'});
+  res.render('up_comp.ejs');
 });
+
+function OnButtonClick(){
+  res.render('ui.ejs');
+}
